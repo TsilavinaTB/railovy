@@ -1,21 +1,2 @@
 {
-    "name": "tsilavina/railovy",
-    "authors": [
-        {
-            "name": "tsilavina",
-            "email": "tsilavina@gmail.com"
-        }
-    ],
-    "autoload": {
-        "psr-4": {
-            "App\\" : "src/"
-        },
-        "files": [ 
-            "vendor/var-dumper/Resources/functions/dump.php",
-            "vendor/bin/AltoRouter.php"
-        ]
-    },
-    "require":{
-        "symfony/var-dumper":"^5.1.2.0"
-    }
 }
