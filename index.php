@@ -11,7 +11,4 @@ $pdo = Connexion::getPDO();
 
 
 ?>
-
-
-
 <a href="Bots/youtubeUrl.php">Youtube APIs</a>
