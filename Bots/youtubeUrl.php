@@ -50,7 +50,7 @@ if(isset($_GET['url']) && isset($_GET['action'])){
 			if(isset(($_GET['resolution']))) {
 				foreach ($downloads as $download) {
 					if(($download['qualityLabel']) == trim($_GET['resolution'])){
-						dd($download);
+						
 						$json->addVideo($download['url']);
 					} 
 				}
