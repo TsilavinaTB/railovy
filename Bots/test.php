@@ -132,7 +132,7 @@
                                          
               if (!empty($keyword))
               {
-                $apikey = 'YOUR API KEY'; 
+                $apikey = 'AIzaSyDjhgRuytpzwY7qYpEfplax6dUATRQ_B_s'; 
                 $googleApiUrl = 'https://www.googleapis.com/youtube/v3/search?part=snippet&q=' . $keyword . '&maxResults=' . MAX_RESULTS . '&key=' . $apikey;
 
                 $ch = curl_init();
