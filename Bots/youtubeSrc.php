@@ -150,8 +150,6 @@ use App\RepChatfuel;
                 $data = json_decode($response);
                 $value = json_decode(json_encode($data), true);
             ?>
-
-            <div class="result-heading">About <?php echo MAX_RESULTS; ?> Results</div>
             <div class="" id="SearchResultsDiv">
 
             <?php
