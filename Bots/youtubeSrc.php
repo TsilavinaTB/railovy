@@ -1,5 +1,9 @@
 <?php
     define("MAX_RESULTS", 5);
+
+require '../vendor/autoload.php';
+
+use App\RepChatfuel;
     
      if (isset($_POST['submit']) )
      {
@@ -158,19 +162,11 @@
                     $videoId = $value['items'][$i]['id']['videoId'];
                     $title = $value['items'][$i]['snippet']['title'];
                     $description = $value['items'][$i]['snippet']['description'];
-                    ?> 
-    
-                        <div class="video-tile">
-                        <div  class="videoDiv">
-                            <iframe id="iframe" style="width:100%;height:100%" src="//www.youtube.com/embed/<?php echo $videoId; ?>" 
-                                    data-autoplay-src="//www.youtube.com/embed/<?php echo $videoId; ?>?autoplay=1"></iframe>                     
-                        </div>
-                        <div class="videoInfo">
-                        <div class="videoTitle"><b><?php echo $title; ?></b></div>
-                        <div class="videoDesc"><?php echo $description; ?></div>
-                        </div>
-                        </div>
-           <?php 
+                    
+                    $json = new RepChatfuel();
+                    
+                    $json->addMessage('test'),
+                    $json->reponse();
                     }
                 } 
            
