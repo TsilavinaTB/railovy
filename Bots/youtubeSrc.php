@@ -10,9 +10,9 @@ require '../vendor/autoload.php';
 
 use App\RepChatfuel;
     
-     if (isset($_POST['submit']) )
+     if (isset($_GET['submit']) )
      {
-        $keyword = $_POST['keyword'];
+        $keyword = $_GET['keyword'];
                
         if (empty($keyword))
         {
@@ -123,7 +123,7 @@ use App\RepChatfuel;
     <body>
         <h2>Search Videos by keyword using YouTube Data API V3</h2>
         <div class="search-form-container">
-            <form id="keywordForm" method="post" action="">
+            <form id="keywordForm" method="GET" action="">
                 <div class="input-row">
                     Search Keyword : <input class="input-field" type="search" id="keyword" name="keyword"  placeholder="Enter Search Keyword">
                 </div>
@@ -136,7 +136,7 @@ use App\RepChatfuel;
                 <div class="response <?php echo $response["type"]; ?>"> <?php echo $response["message"]; ?> </div>
         <?php }?>
         <?php
-            if (isset($_POST['submit']) )
+            if (isset($_GET['submit']) )
             {
                                          
               if (!empty($keyword))
