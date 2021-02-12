@@ -108,6 +108,50 @@ class RepChatfuel
 		return $this;
 	}
 
+	public function addGalery($arrays)
+	{
+
+
+
+		$elements = [];
+
+		foreach ($arrays as $array) {   
+     
+
+			$set_attr = [
+				 $array['attributes_name'] => $array['attributes_value']
+			];
+
+			$btn[] = [
+					'type' => "show_block",
+                	"block_names" => [$array['block_names']],
+	                "title" => $array['block_title'],
+	                "set_attributes" => $set_attr
+	        ];
+
+			$elements[] = [
+				'title' => $array['title']  ,
+                'image_url' => $array['image_url'],
+                "subtitle" => $array['subtitle'],
+                'buttons' => $btn
+			];
+		}
+
+		$payload = [
+			"template_type"=>"generic",
+            "image_aspect_ratio" => "square",
+            "elements" => $elements
+		];
+
+		$return = [
+			"type" => "template",
+			"payload" => $payload
+		];
+
+		$send['attachment'] = $return;
+
+		$this->json['messages'][] = $send;
+	}
 
 
 	public function reponse()
