@@ -65,7 +65,7 @@ use App\RepChatfuel;
                     $description = $value['items'][$i]['snippet']['description'];
                     
                     
-                    $sr[] = $title . " https://www.youtube.com/watch?v=".$videoId;
+                    $sr[] = $title . " https:\/\/www.youtube.com/watch?v=".$videoId;
 
                     }
                 $sr = implode( " \n " , $sr);
