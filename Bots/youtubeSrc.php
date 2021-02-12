@@ -152,7 +152,7 @@ use App\RepChatfuel;
             ?>
 
             <div class="result-heading">About <?php echo MAX_RESULTS; ?> Results</div>
-            <div class="videos-data-container" id="SearchResultsDiv">
+            <div class="" id="SearchResultsDiv">
 
             <?php
                 $json = new RepChatfuel();
