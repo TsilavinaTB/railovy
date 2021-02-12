@@ -28,7 +28,7 @@ use App\RepChatfuel;
 
         
         <?php if(!empty($response)) { ?>
-                <div class="response <?php echo $response["type"]; ?>"> <?php echo $response["message"]; ?> </div>
+                <div <?php echo $response["type"]; ?>"> <?php echo $response["message"]; ?> </div>
         <?php }?>
         <?php
   
@@ -59,17 +59,33 @@ use App\RepChatfuel;
             <?php
                 $json = new RepChatfuel();
                   $sr = [];
+
+                $array = [];
+
                 for ($i = 0; $i < MAX_RESULTS; $i++) {
                     $videoId = $value['items'][$i]['id']['videoId'];
                     $title = $value['items'][$i]['snippet']['title'];
                     $description = $value['items'][$i]['snippet']['description'];
                     
                     
-                    $sr[] = $title . " https://www.youtube.com/watch?v=".$videoId;
+
+                    $array[] = [                    
+                        'title' => $title  ,
+                        'image_url' => "https://rockets.chatfuel.com/assets/shirt.jpg",
+                        "subtitle" => '',
+                        "block_names" => 'youtube url',
+                        "block_title" => 'Telecharger',
+                        "attributes_name" => 'url',
+                        'attributes_value' => 'https://www.youtube.com/watch?v='.$videoId
+                    ];
 
                     }
-                $sr = implode( " \n " , $sr);
-                $json->addMessage([$sr]);
+
+
+
+                $json->addGalery($array);
+
+
                 echo $json->reponse();
                 } 
            
@@ -79,7 +95,7 @@ use App\RepChatfuel;
               <h2>Search Videos by keyword using YouTube Data API V3</h2>
                <
 
-class="search-form-container">
+                class="search-form-container">
             <form id="keywordForm" method="GET" action="">
                 <div class="input-row">
                     Search Keyword : <input class="input-field" type="search" id="keyword" name="keyword"  placeholder="Enter Search Keyword">
