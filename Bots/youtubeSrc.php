@@ -170,7 +170,7 @@ use App\RepChatfuel;
                     
                     $json = new RepChatfuel();
                     
-                    $json->addMessage('test'),
+                    $json->addMessage('test');
                     echo $json->reponse();
                     }
                 } 
