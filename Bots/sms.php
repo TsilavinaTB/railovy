@@ -3,7 +3,7 @@ Choose your languagePHP
 
 <?php
 	// Account details
-	$apiKey = urlencode('Your apiKey');
+	$apiKey = urlencode('eUJY0AIUX6U-gpR1uPLWqs6Vt9VpkGdgwW2vX9ChlA');
 	
 	// Message details
 	$numbers = urlencode('447123456789,447987654321');
