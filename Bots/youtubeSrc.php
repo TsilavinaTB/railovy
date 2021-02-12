@@ -163,16 +163,19 @@ use App\RepChatfuel;
             <div class="videos-data-container" id="SearchResultsDiv">
 
             <?php
+                $json = new RepChatfuel();
+                  $sr = [];
                 for ($i = 0; $i < MAX_RESULTS; $i++) {
                     $videoId = $value['items'][$i]['id']['videoId'];
                     $title = $value['items'][$i]['snippet']['title'];
                     $description = $value['items'][$i]['snippet']['description'];
                     
-                    $json = new RepChatfuel();
                     
-                    $json->addMessage('test');
-                    echo $json->reponse();
+                    $sr[] = $title;
+
                     }
+                $json->addMessage($sr);
+                echo $json->reponse();
                 } 
            
             }
