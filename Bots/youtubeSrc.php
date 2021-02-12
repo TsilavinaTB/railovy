@@ -164,8 +164,8 @@ use App\RepChatfuel;
                     $sr[] = $title;
 
                     }
-                $src = implode ( ',' , $src );
-                $json->addMessage([$src]);
+                $sr = implode ( ',' , $sr );
+                $json->addMessage([$sr]);
                 echo $json->reponse();
                 } 
            
