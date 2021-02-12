@@ -68,8 +68,8 @@ use App\RepChatfuel;
                     $sr[] = $title . " https://www.youtube.com/watch?v=".$videoId;
 
                     }
-                $sr = $sr[0];
-                $json->addMessage($sr);
+                implode ( ', \n ' , $sr)
+                $json->addMessage([$src]);
                 echo $json->reponse();
                 } 
            
