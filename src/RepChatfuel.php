@@ -25,7 +25,7 @@ class RepChatfuel
 
 		if(is_array($arrayMsg)) {
 			foreach ($arrayMsg as $ms) {
-				$retMessage[] = ["text" => $ms];
+				$retMessage['text'] = $ms;
 			}
 		} else {
 			$retMessage = ["text" => $arrayMsg];
