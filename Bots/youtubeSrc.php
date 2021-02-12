@@ -1,5 +1,5 @@
 <?php
-    define("MAX_RESULTS", 15);
+    define("MAX_RESULTS", 5);
     
      if (isset($_POST['submit']) )
      {
