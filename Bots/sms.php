@@ -6,7 +6,7 @@ Choose your languagePHP
 	$apiKey = urlencode('eUJY0AIUX6U-gpR1uPLWqs6Vt9VpkGdgwW2vX9ChlA');
 	
 	// Message details
-	$numbers = urlencode('447123456789,447987654321');
+	$numbers = urlencode('261348483193');
 	$sender = urlencode('Jims Autos');
 	$message = rawurlencode('This is your message');
  
