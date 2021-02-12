@@ -130,20 +130,6 @@ use App\RepChatfuel;
   
             if (isset($_GET['submit']) )
             {
-              ?> 
-        
-              <h2>Search Videos by keyword using YouTube Data API V3</h2>
-               <div class="search-form-container">
-            <form id="keywordForm" method="GET" action="">
-                <div class="input-row">
-                    Search Keyword : <input class="input-field" type="search" id="keyword" name="keyword"  placeholder="Enter Search Keyword">
-                </div>
-
-                <input class="btn-submit"  type="submit" name="submit" value="Search">
-            </form>
-            </div>
-        
-            <?php
                                          
               if (!empty($keyword))
               {
@@ -184,6 +170,21 @@ use App\RepChatfuel;
                 echo $json->reponse();
                 } 
            
+            } else {
+                          ?> 
+        
+              <h2>Search Videos by keyword using YouTube Data API V3</h2>
+               <div class="search-form-container">
+            <form id="keywordForm" method="GET" action="">
+                <div class="input-row">
+                    Search Keyword : <input class="input-field" type="search" id="keyword" name="keyword"  placeholder="Enter Search Keyword">
+                </div>
+
+                <input class="btn-submit"  type="submit" name="submit" value="Search">
+            </form>
+            </div>
+        
+            <?php
             }
             ?> 
             
