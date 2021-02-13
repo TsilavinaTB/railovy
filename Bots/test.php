@@ -10,7 +10,7 @@
             {
               "title":"Chatfuel Rockets Jersey",
               "image_url":"https://rockets.chatfuel.com/assets/shirt.jpg",
-              "subtitle":"Size: M",
+              "subtitle":"",
               "buttons":[
                 {
                   "type":"web_url",
