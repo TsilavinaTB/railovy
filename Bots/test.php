@@ -1,1 +1,43 @@
-{"messages":[{"attachment":{"type":"template","payload":{"template_type":"generic","image_aspect_ratio":"square","elements":[{"title":"STEPHANIE Iha malay [ Nouveaut\u00e9 Gasy 2020 ]","image_url":"https:\/\/rockets.chatfuel.com\/assets\/shirt.jpg","subtitle":"","buttons":[{"type":"show_block","block_names":["youtube url"],"title":"Telecharger","set_attributes":{"url":"https:\/\/www.youtube.com\/watch?v=useaR6FC3W8"}}]},{"title":"MAD MAX - NITILIGNY (CLIP OFFICIEL 2021)","image_url":"https:\/\/rockets.chatfuel.com\/assets\/shirt.jpg","subtitle":"","buttons":[{"type":"show_block","block_names":["youtube url"],"title":"Telecharger","set_attributes":{"url":"https:\/\/www.youtube.com\/watch?v=useaR6FC3W8"}},{"type":"show_block","block_names":["youtube url"],"title":"Telecharger","set_attributes":{"url":"https:\/\/www.youtube.com\/watch?v=fpTSTWx1LsA"}}]},{"title":"Add Gasy - Medley Cover directed by DL Visual (Clip officiel) 4K","image_url":"https:\/\/rockets.chatfuel.com\/assets\/shirt.jpg","subtitle":"","buttons":[{"type":"show_block","block_names":["youtube url"],"title":"Telecharger","set_attributes":{"url":"https:\/\/www.youtube.com\/watch?v=useaR6FC3W8"}},{"type":"show_block","block_names":["youtube url"],"title":"Telecharger","set_attributes":{"url":"https:\/\/www.youtube.com\/watch?v=fpTSTWx1LsA"}},{"type":"show_block","block_names":["youtube url"],"title":"Telecharger","set_attributes":{"url":"https:\/\/www.youtube.com\/watch?v=PZaaAmO17lk"}}]},{"title":"Nathy_Ataoko akory (Nouveaut\u00e9 clip Gasy 2020)","image_url":"https:\/\/rockets.chatfuel.com\/assets\/shirt.jpg","subtitle":"","buttons":[{"type":"show_block","block_names":["youtube url"],"title":"Telecharger","set_attributes":{"url":"https:\/\/www.youtube.com\/watch?v=useaR6FC3W8"}},{"type":"show_block","block_names":["youtube url"],"title":"Telecharger","set_attributes":{"url":"https:\/\/www.youtube.com\/watch?v=fpTSTWx1LsA"}},{"type":"show_block","block_names":["youtube url"],"title":"Telecharger","set_attributes":{"url":"https:\/\/www.youtube.com\/watch?v=PZaaAmO17lk"}},{"type":"show_block","block_names":["youtube url"],"title":"Telecharger","set_attributes":{"url":"https:\/\/www.youtube.com\/watch?v=b21R073JFnI"}}]},{"title":"ROV\u00cbLJOH - TOAKA GASY (Clip Officiel)","image_url":"https:\/\/rockets.chatfuel.com\/assets\/shirt.jpg","subtitle":"","buttons":[{"type":"show_block","block_names":["youtube url"],"title":"Telecharger","set_attributes":{"url":"https:\/\/www.youtube.com\/watch?v=useaR6FC3W8"}},{"type":"show_block","block_names":["youtube url"],"title":"Telecharger","set_attributes":{"url":"https:\/\/www.youtube.com\/watch?v=fpTSTWx1LsA"}},{"type":"show_block","block_names":["youtube url"],"title":"Telecharger","set_attributes":{"url":"https:\/\/www.youtube.com\/watch?v=PZaaAmO17lk"}},{"type":"show_block","block_names":["youtube url"],"title":"Telecharger","set_attributes":{"url":"https:\/\/www.youtube.com\/watch?v=b21R073JFnI"}},{"type":"show_block","block_names":["youtube url"],"title":"Telecharger","set_attributes":{"url":"https:\/\/www.youtube.com\/watch?v=1BOVq2GGRyc"}}]}]}}}]} 
+{
+ "messages": [
+    {
+      "attachment":{
+        "type":"template",
+        "payload":{
+          "template_type":"generic",
+          "image_aspect_ratio": "square",
+          "elements":[
+            {
+              "title":"Chatfuel Rockets Jersey",
+              "image_url":"https://rockets.chatfuel.com/assets/shirt.jpg",
+              "subtitle":"Size: M",
+              "buttons":[
+                {
+                  "type":"web_url",
+                  "url":"https://rockets.chatfuel.com/store",
+                  "title":"View Item"
+                }
+              ]
+            },
+            {
+              "title":"Chatfuel Rockets Jersey",
+              "image_url":"https://rockets.chatfuel.com/assets/shirt.jpg",
+              "subtitle":"Size: L",
+              "default_action": {
+                "type": "web_url",
+                "url": "https://rockets.chatfuel.com/store"
+              },
+              "buttons":[
+                {
+                  "type":"web_url",
+                  "url":"https://rockets.chatfuel.com/store",
+                  "title":"View Item"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
