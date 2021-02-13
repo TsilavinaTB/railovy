@@ -123,24 +123,26 @@ class RepChatfuel
 			];
 
 			$btn[] = [
-					'type' => "show_block",
-                	"block_names" => [$array['block_names']],
-	                "title" => $array['block_title'],
-	                "set_attributes" => $set_attr
-	        ];
+				'type' => "show_block",
+				"block_names" => [$array['block_names']],
+				"title" => $array['block_title'],
+				"set_attributes" => $set_attr
+	        	];
 
 			$elements[] = [
 				'title' => $array['title']  ,
-                'image_url' => $array['image_url'],
-                "subtitle" => $array['subtitle'],
-                'buttons' => $btn
+				'image_url' => $array['image_url'],
+				"subtitle" => $array['subtitle'],
+				'buttons' => $btn
 			];
 		}
+		
+		$elements[]=$elements;
 
 		$payload = [
-			"template_type"=>"generic",
-            "image_aspect_ratio" => "square",
-            "elements" => $elements
+		    "template_type"=>"generic",
+		    "image_aspect_ratio" => "square",
+		    "elements" => $elements
 		];
 
 		$return = [
