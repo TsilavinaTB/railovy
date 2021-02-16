@@ -65,9 +65,12 @@ DEB
                     $description = $value['items'][$i]['snippet']['description'];
                     $videoUrl= " https://www.youtube.com/watch?v=".$videoId;
                     
-                    if($i>0){echo ',';}
+                    if($i>0){echo ' ,';}
                     
                     echo $i;
+?>
+ CORS 
+<?php
                     }
 ?>
 FIN
