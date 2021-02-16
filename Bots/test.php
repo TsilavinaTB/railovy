@@ -80,7 +80,7 @@ use App\RepChatfuel;
             {
               "title":"<?=$title?>",
               "image_url":"https://rockets.chatfuel.com/assets/shirt.jpg",
-              "subtitle":"<?=$$description?>",
+              "subtitle":"<?=$description?>",
               "default_action": {
                 "type": "web_url",
                 "url": "https://rockets.chatfuel.com/store"
