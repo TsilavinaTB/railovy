@@ -78,18 +78,19 @@ use App\RepChatfuel;
                     echo $i;
 ?>
             {
-              "title":"Chatfuel Rockets Jersey",
+              "title":"<?=$title?>",
               "image_url":"https://rockets.chatfuel.com/assets/shirt.jpg",
-              "subtitle":"Size: L",
+              "subtitle":"<?=$$description?>",
               "default_action": {
                 "type": "web_url",
                 "url": "https://rockets.chatfuel.com/store"
               },
               "buttons":[
                 {
-                  "type":"web_url",
-                  "url":"https://rockets.chatfuel.com/store",
-                  "title":"View Item"
+                  "type": "show_block",
+                  "block_names": ["testSow"],
+                  "title": "Telecharger",
+                   "set_attributes": {"click": "<?=$title?>"}
                 }
               ]
             }
