@@ -54,6 +54,7 @@ use App\RepChatfuel;
                 curl_close($ch);
                 $data = json_decode($response);
                 $value = json_decode(json_encode($data), true);
+              }
             ?>
 
 {
@@ -90,7 +91,6 @@ use App\RepChatfuel;
                    }
                     <?php
                 }
-
                  
            
 ?>            
@@ -102,7 +102,7 @@ use App\RepChatfuel;
   ]
 }
  <?php      
-              }
+              
             } else {
                     
         
@@ -119,6 +119,4 @@ class="search-form-container">
             </form>
             </div>
         
-            <?php
-            }
- ?> 
+?>
