@@ -86,14 +86,14 @@ use App\RepChatfuel;
                               "title":"View Item"
                             }
                           ]
-                        }
+                       }
                     
                     }
 
-                } 
+                 
            
 ?>            
-            
+             
           ]
         }
       }
