@@ -74,7 +74,7 @@ use App\RepChatfuel;
                 //echo $json->reponse();
                 } 
            
-             
+?>            
 {
  "messages": [
     {
@@ -118,7 +118,7 @@ use App\RepChatfuel;
     }
   ]
 }
-             
+ <?php      
              
             } else {
                           ?> 
