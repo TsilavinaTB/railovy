@@ -87,9 +87,9 @@ use App\RepChatfuel;
               "buttons":[
                 {
                   "type": "show_block",
-                  "block_names": ["testSow"],
+                  "block_names": ["get Resolution"],
                   "title": "Telecharger",
-                   "set_attributes": {"click": "<?=$title?>"}
+                   "set_attributes": {"url": "<?=$videoUrl?>"}
                 }
               ]
             }
