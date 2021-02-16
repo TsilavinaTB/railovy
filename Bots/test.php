@@ -74,8 +74,7 @@ use App\RepChatfuel;
                     $videoUrl= " https://www.youtube.com/watch?v=".$videoId;
                     
                     if($i>0){echo ' ,';}
-                    
-                    echo $i;
+               
 ?>
             {
               "title":"<?=$title?>",
