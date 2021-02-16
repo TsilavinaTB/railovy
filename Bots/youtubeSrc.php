@@ -54,7 +54,15 @@ use App\RepChatfuel;
                 $data = json_decode($response);
                 $value = json_decode(json_encode($data), true);
             ?>
-
+{
+ "messages": [
+    {
+      "attachment":{
+        "type":"template",
+        "payload":{
+          "template_type":"generic",
+          "image_aspect_ratio": "square",
+          "elements":[
 
             <?php
                 $json = new RepChatfuel();
@@ -63,14 +71,39 @@ use App\RepChatfuel;
                     $videoId = $value['items'][$i]['id']['videoId'];
                     $title = $value['items'][$i]['snippet']['title'];
                     $description = $value['items'][$i]['snippet']['description'];
+                    $videoUrl= " https://www.youtube.com/watch?v=".$videoId;
                     
-                    
-                    $sr[] = $title . " https://www.youtube.com/watch?v=".$videoId;
+                    if($i>0){echo ' ,';}
+               
+?>
+            {
+              "title":"<?=$title?>",
+              "image_url":"https://rockets.chatfuel.com/assets/shirt.jpg",
+              "subtitle":"<?=$description?>",
+              "default_action": {
+                "type": "web_url",
+                "url": "https://rockets.chatfuel.com/store"
+              },
+              "buttons":[
+                {
+                  "type": "show_block",
+                  "block_names": ["testSow"],
+                  "title": "Telecharger",
+                   "set_attributes": {"click": "<?=$title?>"}
+                }
+              ]
+            }
 
+<?php
                     }
-                $sr = implode( " \n " , $sr);
-                $json->addMessage([$sr]);
-                echo $json->reponse();
+?>
+          ]
+        }
+      }
+    }
+  ]
+}
+<?php
                 } 
            
             } else {
@@ -93,5 +126,4 @@ class="search-form-container">
             }
             ?> 
             
-        
- 
+      
