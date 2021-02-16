@@ -1,11 +1,10 @@
-
 <?php
 ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
 
 
-define("MAX_RESULTS", 5);
+    define("MAX_RESULTS", 5);
 
 require '../vendor/autoload.php';
 
@@ -22,7 +21,7 @@ use App\RepChatfuel;
                   "message" => "Please enter the keyword."
                 );
         } 
-      }
+    }
          
 ?>
 
@@ -30,7 +29,7 @@ use App\RepChatfuel;
         
         <?php if(!empty($response)) { ?>
                 <div class="response <?php echo $response["type"]; ?>"> <?php echo $response["message"]; ?> </div>
-
+        <?php }?>
         <?php
   
             if (isset($_GET['submit']) )
@@ -54,57 +53,27 @@ use App\RepChatfuel;
                 curl_close($ch);
                 $data = json_decode($response);
                 $value = json_decode(json_encode($data), true);
-              }
             ?>
-
-{
- "messages": [
-    {
-      "attachment":{
-        "type":"template",
-        "payload":{
-          "template_type":"generic",
-          "image_aspect_ratio": "square",
-          "elements":[
+DEB
 
             <?php
-
+                $json = new RepChatfuel();
+                  $sr = [];
                 for ($i = 0; $i < MAX_RESULTS; $i++) {
-                    
                     $videoId = $value['items'][$i]['id']['videoId'];
                     $title = $value['items'][$i]['snippet']['title'];
                     $description = $value['items'][$i]['snippet']['description'];
                     $videoUrl= " https://www.youtube.com/watch?v=".$videoId;
                     
-                    ?>
-                {
-                      "title":"Chatfuel Rockets Jersey",
-                      "image_url":"https://rockets.chatfuel.com/assets/shirt.jpg",
-                      "subtitle":"",
-                      "buttons":[
-                        {
-                          "type":"web_url",
-                          "url":"https://rockets.chatfuel.com/store",
-                          "title":"View Item"
-                        }
-                      ]
-                   }
-                    <?php
-                }
-                 
+                    echo $i;
+                    }
+?>
+FIN
+<?php
+                } 
            
-?>            
-             
-          ]
-        }
-      }
-    }
-  ]
-}
- <?php      
-              
             } else {
-                    
+                          ?> 
         
               <h2>Search Videos by keyword using YouTube Data API V3</h2>
                <
@@ -119,4 +88,8 @@ class="search-form-container">
             </form>
             </div>
         
-?>
+            <?php
+            }
+            ?> 
+            
+      
