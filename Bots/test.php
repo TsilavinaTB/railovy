@@ -5,7 +5,7 @@ ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
 
 
-    define("MAX_RESULTS", 5);
+define("MAX_RESULTS", 5);
 
 require '../vendor/autoload.php';
 
@@ -22,7 +22,7 @@ use App\RepChatfuel;
                   "message" => "Please enter the keyword."
                 );
         } 
-    }
+      }
          
 ?>
 
@@ -30,7 +30,7 @@ use App\RepChatfuel;
         
         <?php if(!empty($response)) { ?>
                 <div class="response <?php echo $response["type"]; ?>"> <?php echo $response["message"]; ?> </div>
-        <?php }?>
+
         <?php
   
             if (isset($_GET['submit']) )
@@ -75,20 +75,21 @@ use App\RepChatfuel;
                     $description = $value['items'][$i]['snippet']['description'];
                     $videoUrl= " https://www.youtube.com/watch?v=".$videoId;
                     
-                     {
-                          "title":"Chatfuel Rockets Jersey",
-                          "image_url":"https://rockets.chatfuel.com/assets/shirt.jpg",
-                          "subtitle":"",
-                          "buttons":[
-                            {
-                              "type":"web_url",
-                              "url":"https://rockets.chatfuel.com/store",
-                              "title":"View Item"
-                            }
-                          ]
-                       }
-                    
-                    }
+                    ?>
+                {
+                      "title":"Chatfuel Rockets Jersey",
+                      "image_url":"https://rockets.chatfuel.com/assets/shirt.jpg",
+                      "subtitle":"",
+                      "buttons":[
+                        {
+                          "type":"web_url",
+                          "url":"https://rockets.chatfuel.com/store",
+                          "title":"View Item"
+                        }
+                      ]
+                   }
+                    <?php
+                }
 
                  
            
