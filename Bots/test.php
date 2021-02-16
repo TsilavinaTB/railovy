@@ -56,25 +56,6 @@ use App\RepChatfuel;
                 $value = json_decode(json_encode($data), true);
             ?>
 
-
-            <?php
-                $json = new RepChatfuel();
-                  $sr = [];
-                for ($i = 0; $i < MAX_RESULTS; $i++) {
-                    $videoId = $value['items'][$i]['id']['videoId'];
-                    $title = $value['items'][$i]['snippet']['title'];
-                    $description = $value['items'][$i]['snippet']['description'];
-                    
-                    
-                    $sr[] = $title . " https://www.youtube.com/watch?v=".$videoId;
-
-                    }
-                $sr = implode( " \n " , $sr);
-                $json->addMessage([$sr]);
-                //echo $json->reponse();
-                } 
-           
-?>            
 {
  "messages": [
     {
@@ -84,34 +65,35 @@ use App\RepChatfuel;
           "template_type":"generic",
           "image_aspect_ratio": "square",
           "elements":[
-            {
-              "title":"Chatfuel Rockets Jersey",
-              "image_url":"https://rockets.chatfuel.com/assets/shirt.jpg",
-              "subtitle":"",
-              "buttons":[
-                {
-                  "type":"web_url",
-                  "url":"https://rockets.chatfuel.com/store",
-                  "title":"View Item"
-                }
-              ]
-            },
-            {
-              "title":"Chatfuel Rockets Jersey",
-              "image_url":"https://rockets.chatfuel.com/assets/shirt.jpg",
-              "subtitle":"Size: L",
-              "default_action": {
-                "type": "web_url",
-                "url": "https://rockets.chatfuel.com/store"
-              },
-              "buttons":[
-                {
-                  "type":"web_url",
-                  "url":"https://rockets.chatfuel.com/store",
-                  "title":"View Item"
-                }
-              ]
-            }
+
+            <?php
+
+                for ($i = 0; $i < MAX_RESULTS; $i++) {
+                    
+                    $videoId = $value['items'][$i]['id']['videoId'];
+                    $title = $value['items'][$i]['snippet']['title'];
+                    $description = $value['items'][$i]['snippet']['description'];
+                    $videoUrl= " https://www.youtube.com/watch?v=".$videoId;
+                    
+                     {
+                          "title":"Chatfuel Rockets Jersey",
+                          "image_url":"https://rockets.chatfuel.com/assets/shirt.jpg",
+                          "subtitle":"",
+                          "buttons":[
+                            {
+                              "type":"web_url",
+                              "url":"https://rockets.chatfuel.com/store",
+                              "title":"View Item"
+                            }
+                          ]
+                        }
+                    
+                    }
+
+                } 
+           
+?>            
+            
           ]
         }
       }
