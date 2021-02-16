@@ -54,7 +54,15 @@ use App\RepChatfuel;
                 $data = json_decode($response);
                 $value = json_decode(json_encode($data), true);
             ?>
-DEB
+{
+ "messages": [
+    {
+      "attachment":{
+        "type":"template",
+        "payload":{
+          "template_type":"generic",
+          "image_aspect_ratio": "square",
+          "elements":[
 
             <?php
                 $json = new RepChatfuel();
@@ -69,11 +77,32 @@ DEB
                     
                     echo $i;
 ?>
- CORS 
+            {
+              "title":"Chatfuel Rockets Jersey",
+              "image_url":"https://rockets.chatfuel.com/assets/shirt.jpg",
+              "subtitle":"Size: L",
+              "default_action": {
+                "type": "web_url",
+                "url": "https://rockets.chatfuel.com/store"
+              },
+              "buttons":[
+                {
+                  "type":"web_url",
+                  "url":"https://rockets.chatfuel.com/store",
+                  "title":"View Item"
+                }
+              ]
+            }
+
 <?php
                     }
 ?>
-FIN
+          ]
+        }
+      }
+    }
+  ]
+}
 <?php
                 } 
            
