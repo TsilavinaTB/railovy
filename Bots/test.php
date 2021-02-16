@@ -104,7 +104,7 @@ use App\RepChatfuel;
  <?php      
               }
             } else {
-                          ?> 
+                    
         
               <h2>Search Videos by keyword using YouTube Data API V3</h2>
                <
