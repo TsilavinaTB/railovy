@@ -1,9 +1,9 @@
 <?php
-/*
+
 ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
-*/
+
 
     define("MAX_RESULTS", 5);
 
@@ -69,6 +69,7 @@ use App\RepChatfuel;
                 $json = new RepChatfuel();
                   $sr = [];
                 for ($i = 0; $i < MAX_RESULTS; $i++) {
+                    var_dump($value['items'][$i]['id']);
                     $videoId = $value['items'][$i]['id']['videoId'];
                     $title = $value['items'][$i]['snippet']['title'];
                     $description = $value['items'][$i]['snippet']['description'];
