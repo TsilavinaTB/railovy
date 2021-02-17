@@ -5,7 +5,7 @@ ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
 */
 
-    define("MAX_RESULTS", 10);
+    define("MAX_RESULTS", 20);
 
 require '../vendor/autoload.php';
 
