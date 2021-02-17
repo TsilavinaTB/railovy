@@ -69,6 +69,7 @@ use App\RepChatfuel;
                 $json = new RepChatfuel();
                   $sr = [];
                 for ($i = 0; $i < MAX_RESULTS; $i++) {
+                    $img = $value['items'][$i]['snippet']['thumbnails']['default']['url'];
                     $videoId = $value['items'][$i]['id']['videoId'];
                     $title = $value['items'][$i]['snippet']['title'];
                     $description = $value['items'][$i]['snippet']['description'];
@@ -79,7 +80,7 @@ use App\RepChatfuel;
 ?>
             {
               "title":"<?=$title?>",
-              "image_url":"https://rockets.chatfuel.com/assets/shirt.jpg",
+              "image_url":"<?=$img?>",
               "subtitle":"<?=$description?>",
               "default_action": {
                 "type": "web_url",
