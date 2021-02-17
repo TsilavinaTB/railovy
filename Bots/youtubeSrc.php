@@ -68,6 +68,7 @@ use App\RepChatfuel;
                 $json = new RepChatfuel();
                   $sr = [];
                 for ($i = 0; $i < MAX_RESULTS; $i++) {
+                    var_dump($value['items'][$i]);
                     $videoId = $value['items'][$i]['id']['videoId'];
                     $title = $value['items'][$i]['snippet']['title'];
                     $description = $value['items'][$i]['snippet']['description'];
