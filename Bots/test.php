@@ -1,8 +1,9 @@
 <?php
+/*
 ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
-
+*/
 
     define("MAX_RESULTS", 5);
 
@@ -10,9 +11,9 @@ require '../vendor/autoload.php';
 
 use App\RepChatfuel;
     
-     if (isset($_GET['submit']) )
+     if (isset($_POST['submit']) )
      {
-        $keyword = $_GET['keyword'];
+        $keyword = $_POST['keyword'];
                
         if (empty($keyword))
         {
@@ -32,7 +33,7 @@ use App\RepChatfuel;
         <?php }?>
         <?php
   
-            if (isset($_GET['submit']) )
+            if (isset($_POST['submit']) )
             {
                                          
               if (!empty($keyword))
@@ -87,9 +88,9 @@ use App\RepChatfuel;
               "buttons":[
                 {
                   "type": "show_block",
-                  "block_names": ["testSow"],
+                  "block_names": ["get Resolution"],
                   "title": "Telecharger",
-                   "set_attributes": {"click": "<?=$title?>"}
+                   "set_attributes": {"url": "<?=$videoUrl?>"}
                 }
               ]
             }
@@ -113,7 +114,7 @@ use App\RepChatfuel;
                <
 
 class="search-form-container">
-            <form id="keywordForm" method="GET" action="">
+            <form id="keywordForm" method="POST" action="">
                 <div class="input-row">
                     Search Keyword : <input class="input-field" type="search" id="keyword" name="keyword"  placeholder="Enter Search Keyword">
                 </div>
