@@ -20,10 +20,10 @@
  * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
  * DEALINGS IN THE SOFTWARE.
  */
-namespace Facebook;
+namespace App;
 
-use Facebook\Authentication\AccessToken;
-use Facebook\Exception\SDKException;
+use App\Authentication\AccessToken;
+use App\Exception\SDKException;
 
 class Application implements \Serializable
 {
