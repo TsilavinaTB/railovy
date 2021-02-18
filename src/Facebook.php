@@ -20,24 +20,24 @@
  * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
  * DEALINGS IN THE SOFTWARE.
  */
-namespace Facebook;
+namespace App;
 
-use Facebook\Authentication\AccessToken;
-use Facebook\Authentication\OAuth2Client;
-use Facebook\FileUpload\File;
-use Facebook\FileUpload\ResumableUploader;
-use Facebook\FileUpload\TransferChunk;
-use Facebook\FileUpload\Video;
-use Facebook\GraphNode\GraphEdge;
-use Facebook\Url\UrlDetectionInterface;
-use Facebook\Url\UrlDetectionHandler;
-use Facebook\PersistentData\PersistentDataFactory;
-use Facebook\PersistentData\PersistentDataInterface;
-use Facebook\Helper\CanvasHelper;
-use Facebook\Helper\JavaScriptHelper;
-use Facebook\Helper\PageTabHelper;
-use Facebook\Helper\RedirectLoginHelper;
-use Facebook\Exception\SDKException;
+use App\Authentication\AccessToken;
+use App\Authentication\OAuth2Client;
+use App\FileUpload\File;
+use App\FileUpload\ResumableUploader;
+use App\FileUpload\TransferChunk;
+use App\FileUpload\Video;
+use App\GraphNode\GraphEdge;
+use App\Url\UrlDetectionInterface;
+use App\Url\UrlDetectionHandler;
+use App\PersistentData\PersistentDataFactory;
+use App\PersistentData\PersistentDataInterface;
+use App\Helper\CanvasHelper;
+use App\Helper\JavaScriptHelper;
+use App\Helper\PageTabHelper;
+use App\Helper\RedirectLoginHelper;
+use App\Exception\SDKException;
 use Http\Client\HttpClient;
 
 /**
