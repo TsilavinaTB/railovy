@@ -21,10 +21,10 @@
  * DEALINGS IN THE SOFTWARE.
  *
  */
-namespace Facebook;
+namespace App;
 
-use Facebook\Authentication\AccessToken;
-use Facebook\Exceptions\FacebookSDKException;
+use App\Authentication\AccessToken;
+use App\Exceptions\FacebookSDKException;
 
 class FacebookApp implements \Serializable
 {
