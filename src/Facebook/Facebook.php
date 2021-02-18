@@ -21,27 +21,27 @@
  * DEALINGS IN THE SOFTWARE.
  *
  */
-namespace Facebook;
+namespace App;
 
-use Facebook\Authentication\AccessToken;
-use Facebook\Authentication\OAuth2Client;
-use Facebook\FileUpload\FacebookFile;
-use Facebook\FileUpload\FacebookResumableUploader;
-use Facebook\FileUpload\FacebookTransferChunk;
-use Facebook\FileUpload\FacebookVideo;
-use Facebook\GraphNodes\GraphEdge;
-use Facebook\Url\UrlDetectionInterface;
-use Facebook\Url\FacebookUrlDetectionHandler;
-use Facebook\PseudoRandomString\PseudoRandomStringGeneratorFactory;
-use Facebook\PseudoRandomString\PseudoRandomStringGeneratorInterface;
-use Facebook\HttpClients\HttpClientsFactory;
-use Facebook\PersistentData\PersistentDataFactory;
-use Facebook\PersistentData\PersistentDataInterface;
-use Facebook\Helpers\FacebookCanvasHelper;
-use Facebook\Helpers\FacebookJavaScriptHelper;
-use Facebook\Helpers\FacebookPageTabHelper;
-use Facebook\Helpers\FacebookRedirectLoginHelper;
-use Facebook\Exceptions\FacebookSDKException;
+use App\Authentication\AccessToken;
+use App\Authentication\OAuth2Client;
+use App\FileUpload\FacebookFile;
+use App\FileUpload\FacebookResumableUploader;
+use App\FileUpload\FacebookTransferChunk;
+use App\FileUpload\FacebookVideo;
+use App\GraphNodes\GraphEdge;
+use App\Url\UrlDetectionInterface;
+use App\Url\FacebookUrlDetectionHandler;
+use App\PseudoRandomString\PseudoRandomStringGeneratorFactory;
+use App\PseudoRandomString\PseudoRandomStringGeneratorInterface;
+use App\HttpClients\HttpClientsFactory;
+use App\PersistentData\PersistentDataFactory;
+use App\PersistentData\PersistentDataInterface;
+use App\Helpers\FacebookCanvasHelper;
+use App\Helpers\FacebookJavaScriptHelper;
+use App\Helpers\FacebookPageTabHelper;
+use App\Helpers\FacebookRedirectLoginHelper;
+use App\Exceptions\FacebookSDKException;
 
 /**
  * Class Facebook
