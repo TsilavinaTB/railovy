@@ -23,9 +23,9 @@
 namespace App;
 
 use App\Exception\SDKException;
-use App\Http\Client\HttpClient;
-use App\Http\Discovery\HttpClientDiscovery;
-use App\Http\Discovery\MessageFactoryDiscovery;
+use Http\Client\HttpClient;
+use Http\Discovery\HttpClientDiscovery;
+use Http\Discovery\MessageFactoryDiscovery;
 
 /**
  * @package Facebook
