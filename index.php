@@ -7,8 +7,9 @@ ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
 
 require_once 'vendor/autoload.php';
+use Facebook\Facebook;
 
- $fb = new  \Facebook\Facebook([
+ $fb = new  Facebook([
   'app_id' => '{app-id}',
   'app_secret' => '{app-secret}',
   'default_graph_version' => 'v2.10',
