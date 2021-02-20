@@ -16,9 +16,16 @@ use Facebook\Facebook;
   'default_access_token' => 'EAApGIOu0ZAn0BAIJ5PGbkvKbeCgzZCzpdZCSmsKX5AvlGMRyNC7m09aBsammZA6c2rY2NcwZA42GvEYCBPYrFntt837XJ20ZAxI1PbZBWkoFb7mgAoATyTVnG6Lz6NTEuRRMhrt135dNa6KcY0etFLLqk4l25XGWs4XZC0gxjuQFdOCqdsMCZBZBRCvvMLmAkeKnPGkbqEvLF8KeSsEJ5uYsDczo1WvEv4SbiME8clJl7CfwZDZD', // optional
 ]);
 
+# login.php
+$fb = new Facebook\Facebook([/* . . . */]);
+
+$helper = $fb->getRedirectLoginHelper();
+$permissions = ['email', 'user_likes']; // optional
+$loginUrl = $helper->getLoginUrl('http://{your-website}/login-callback.php', $permissions);
+
+echo '<a href="' . $loginUrl . '">Log in with Facebook!</a>';
 
 $response = $fb->get('/me');
 $response = $response->getGraphUser();
 var_dump($response);
-
 ?>
