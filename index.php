@@ -18,6 +18,7 @@ use Facebook\Facebook;
 
 
 $response = $fb->get('/me');
+$response = $response->getGraphUser();
 var_dump($response);
 
 ?>
