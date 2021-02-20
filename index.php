@@ -13,7 +13,7 @@ use Facebook\Facebook;
   'app_id' => 2891856974472829,
   'app_secret' => '98be3ab63d0d2b76a3ef55facf760f3c',
   'default_graph_version' => 'v2.10',
-  //'default_access_token' => '{access-token}', // optional
+  'default_access_token' => 'EAApGIOu0ZAn0BAIJ5PGbkvKbeCgzZCzpdZCSmsKX5AvlGMRyNC7m09aBsammZA6c2rY2NcwZA42GvEYCBPYrFntt837XJ20ZAxI1PbZBWkoFb7mgAoATyTVnG6Lz6NTEuRRMhrt135dNa6KcY0etFLLqk4l25XGWs4XZC0gxjuQFdOCqdsMCZBZBRCvvMLmAkeKnPGkbqEvLF8KeSsEJ5uYsDczo1WvEv4SbiME8clJl7CfwZDZD', // optional
 ]);
 
 
