@@ -16,7 +16,14 @@ use Facebook\Facebook;
   //'default_access_token' => '{access-token}', // optional
 ]);
 
-$response = $fb->get('/me');
+$helper = $fb->getRedirectLoginHelper();
+
+$permissions = ['email']; // Optional permissions
+$loginUrl = $helper->getLoginUrl('https://example.com/fb-callback.php', $permissions);
+
+echo '<a href="' . $loginUrl . '">Log in with Facebook!</a>';
+
+//$response = $fb->get('/me');
 
 var_dump($response);
 
