@@ -16,6 +16,8 @@ use Facebook\Facebook;
   //'default_access_token' => '{access-token}', // optional
 ]);
 
-var_dump($fb);
+$response = $fb->get('/me');
+
+var_dump($response);
 
 ?>
