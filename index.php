@@ -17,7 +17,7 @@ use Facebook\Facebook;
 ]);
 
 # login.php
-$fb = new Facebook\Facebook([/* . . . */]);
+$fb = new Facebook([/* . . . */]);
 
 $helper = $fb->getRedirectLoginHelper();
 $permissions = ['email', 'user_likes']; // optional
