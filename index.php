@@ -24,7 +24,6 @@ $loginUrl = $helper->getLoginUrl('https://example.com/fb-callback.php', $permiss
 echo '<a href="' . $loginUrl . '">Log in with Facebook!</a>';
 
 //$response = $fb->get('/me');
-
-var_dump($response);
+//var_dump($response);
 
 ?>
