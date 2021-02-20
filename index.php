@@ -20,7 +20,7 @@ use Facebook\Facebook;
 
 $helper = $fb->getRedirectLoginHelper();
 $permissions = ['email', 'user_likes']; // optional
-$loginUrl = $helper->getLoginUrl('http://tsilavina.herokuapp.com/fb-callback.php', $permissions);
+$loginUrl = $helper->getLoginUrl('http://tsilavina.herokuapp.com', $permissions);
 
 echo '<a href="' . $loginUrl . '">Log in with Facebook!</a>';
 
