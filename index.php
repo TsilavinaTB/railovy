@@ -10,8 +10,8 @@ require_once 'src/Facebook/autoload.php';
 use Facebook\Facebook;
 
  $fb = new  Facebook([
-  'app_id' => '{app-id}',
-  'app_secret' => '{app-secret}',
+  'app_id' => 2891856974472829,
+  'app_secret' => '98be3ab63d0d2b76a3ef55facf760f3c',
   'default_graph_version' => 'v2.10',
   //'default_access_token' => '{access-token}', // optional
 ]);
