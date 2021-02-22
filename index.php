@@ -26,5 +26,5 @@ echo '<a href="' . $loginUrl . '">Log in with Facebook!</a>';
 
 //$response = $fb->get('/me');
 //$response = $response->getGraphUser();
-var_dump($fb);
+var_dump($helper);
 ?>
