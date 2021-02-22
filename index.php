@@ -24,7 +24,7 @@ $loginUrl = $helper->getLoginUrl('http://tsilavina.herokuapp.com/index.php', $pe
 
 echo '<a href="' . $loginUrl . '">Log in with Facebook!</a>';
 
-$response = $fb->get('/me');
-$response = $response->getGraphUser();
-var_dump($response);
+//$response = $fb->get('/me');
+//$response = $response->getGraphUser();
+var_dump($fb);
 ?>
