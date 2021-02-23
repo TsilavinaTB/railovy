@@ -13,7 +13,7 @@ use Facebook\Facebook;
   'app_id' => 270176967845178,
   'app_secret' => '55ea11f35e862616904b3e0ef9053ba2',
   'default_graph_version' => 'v2.10',
-  'default_access_token' => 'd18d78483fe93ddc5e4a0366a1120cc6', // optional
+  //'default_access_token' => 'd18d78483fe93ddc5e4a0366a1120cc6', // optional
 ]);
 
 # login.php
