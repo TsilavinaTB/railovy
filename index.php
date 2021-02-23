@@ -19,7 +19,7 @@ use Facebook\Facebook;
 # login.php
 
 $helper = $fb->getRedirectLoginHelper();
-$permissions = ['email', 'user_likes']; // optional
+$permissions = ['email']; // optional
 $loginUrl = $helper->getLoginUrl('http://tsilavina.herokuapp.com/index.php', $permissions);
 
 echo '<a href="' . $loginUrl . '">Log in with Facebook!</a>';
